@@ -1,0 +1,119 @@
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+#formas_pagamento { 
+    color: red;
+}
+
+.menu {
+    background-color:#FF0000; 
+    border-radius: 10px;
+}   
+
+.menu a {
+    color: white;
+    display: inline-table; 
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 24.5%; 
+    padding: 10px 0px 10px; 
+}
+
+.menu a:hover {
+    color: rgb(255, 215, 0);
+}
+
+/* página produtos */ 
+
+.opcoes_produtos {
+    display: flex; 
+    height: auto; 
+    width: 100%; 
+}    
+
+.categorias { 
+    text-align: justify;
+    width: 20%; 
+    height: auto; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+  }
+
+.produtos { 
+    width: 100%; 
+    height: 100%; 
+    float: right;  
+    text-align: center;
+    flex-wrap: wrap;
+}     
+
+.box_produto { 
+    display: inline-block; 
+    width: 20%; 
+    text-align: center; 
+    vertical-align: bottom; 
+    padding: 10px; 
+    background-color: white;
+    border-radius: 30px;
+    margin: 10px;
+    border-width: 3px;
+}     
+
+.preco {
+    font-weight: bold;
+}
+
+.preco {
+    color: red; 
+}
+
+.preco_anterior {
+    font-size: smaller;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* página nossas lojas */ 
+
+.lojas { 
+    display: flex;
+    height: auto; 
+    width: 100%;
+    column-gap: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+} 
+
+/* página fale conosco */ 
+
+.contatos { 
+    -moz-column-count: 2;
+    -moz-column-gap: 50px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 50px;
+    column-count: 2;
+    column-gap: 50px; 
+    text-align: center;
+}
+
+.formulario {
+    text-align: center;
+}
+
+/*rodapé*/ 
+
+#rodape {
+    text-align: center;
+}

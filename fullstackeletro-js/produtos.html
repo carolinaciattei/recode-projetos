@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Produtos - Full Stack Eletro</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="js/funcoes.js"></script>
+</head>
+<body> 
+
+    <!-- Menu -->
+    <nav class="menu"> 
+        <a href="index.html"><img src="./imagens/logo.png" width="100px">
+        <a href="produtos.html">Produtos</a>
+        <a href="loja.html">Nossas lojas</a>
+        <a href="fale_conosco.html">Fale conosco</a>
+    </nav>
+    
+    <header>
+        <h1>Produtos</h1>
+    </header>
+    <hr> 
+ 
+<div class="opcoes_produtos"> 
+    <section class="categorias">
+        <h3>Categorias</h3>
+        <ul>
+            <li onclick="exibir_todos()">Todos (12)</li>
+            <li onclick="exibir_categoria('geladeira')">Geladeiras (3)</li>
+            <li onclick="exibir_categoria('fogao')">Fogões (2)</li>
+            <li onclick="exibir_categoria('microondas')">Microondas (3)</li>
+            <li onclick="exibir_categoria('lavaroupas')">Lavadora de roupas(2)</li>
+            <li onclick="exibir_categoria('lavaloucas')">Lava-louças(2)</li>       
+        </ul>
+    </section>
+
+    <section class="produtos"> 
+        <div class="box_produto" id="geladeira" style="display: block;">  
+            <img onmousemove="zoomImg(this)" onmouseout="normalImg(this)" src="./imagens/produtos/geladeira_brastemp.jpg" width="120px"> 
+            <br> 
+            <p class="descricao">Geladeira Brastemp Frost Free Side Inverse 540 Litros</p>
+            <hr> 
+            <p class="preco_anterior"><strike>R$ 6.799,00</strike></p>
+            <p class="preco">R$ 4.899,90</p><br>  
+        </div>
+        <div class="box_produto" id="geladeira" style="display: block;"> 
+            <img onmousemove="zoomImg(this)" onmouseout="normalImg(this)" src="./imagens/produtos/geladeira_brastemp2.jpg" width="120px">
+            <br> 
+            <p class="descricao">Geladeira Brastemp Frost Free Inverse 443 Litros</p>
+            <hr> 
+            <p class="preco_anterior"><strike>R$ 3.999,00</strike></p>
+            <p class="preco">R$ 3.599,10</font><br>  
+        </div>
+        <div class="box_produto" id="geladeira" style="display: block;">
+            <img onmousemove="zoomImg(this)" onmouseout="normalImg(this)" src="./imagens/produtos/geladeira_consul3.jpg" width="120px">
+            <br> 
+            <p class="descricao">Geladeira Consul Frost Free Duplex 397 Litros</p>
+            <hr> 
+            <p class="preco_anterior"><strike>R$ R$ 3.769,00</strike></p>
+            <p class="preco">R$ R$ 2.742,57</p><br>  
+        </div>
+        <div class="box_produto" id="fogao" style="display: block;"> 
+            <img onmousemove="zoomImg(this)" onmouseout="normalImg(this)" src="./imagens/produtos/fogão_brastemp1.jpg" width="120px"> 
+            <br> 
+            <p class="descricao">Fogão de Piso 4 Bocas Brastemp Clean Inox</p>    
+            <hr> 
+            <p class="preco_anterior"><strike>R$ 1.275,00</strike></p>
+            <p class="preco">R$ 1.089,00</p></br> 
+        </div>
+        <div class="box_produto" id="fogao" style="display: block;"> 
+            <img onmousemove="zoomImg(this)" onmouseout="normalImg(this)" src="./imagens/produtos/fogão_electrolux2.jpg" width="120px">
+            <br>
+            <p class="descricao">Fogão de Piso 5 Bocas Electrolux</p>    
+            <hr> 
+            <p class="preco_anterior"><strike>R$ R$1.899,00</strike></p>
+            <p class="preco">R$ 1.649,00</p></br>
+        </div>
+        <div class="box_produto" id="microondas" style="display: block;"> 
+            <img onmousemove="zoomImg(this)" onmouseout="normalImg(this)" src="./imagens/produtos/microondas_lg1.jpg" width="120px">
+            <br>
+            <p class="descricao">Microondas LG Solo 30 Litros</p>
+            <hr> 
+            <p class="preco_anterior"><strike>R$ 719,00</strike></p> 
+            <p class="preco">R$ 575,10</p></br>
+        </div>
+        <div class="box_produto" id="microondas" style="display: block;">
+            <img onmousemove="zoomImg(this)" onmouseout="normalImg(this)" src="./imagens/produtos/microondas_philco2.jpg" width="120px">
+            <br>
+            <p class="descricao">Microondas Philco 32 Litros</p>
+            <hr>
+            <p class="preco_anterior"><strike>R$ 708,51</strike></p>
+            <p class="preco">R$ 529,90</p></br>
+        </div> 
+        <div class="box_produto" id="microondas" style="display: block;"> 
+            <img onmousemove="zoomImg(this)" onmouseout="normalImg(this)" src="./imagens/produtos/microondas_electrolux3.jpg" width="120px"> 
+            <br> 
+            <p class="descricao">Microondas Electrolux 31 Litros</p>
+            <hr>
+            <p class="preco_anterior"><strike>R$ 847,90</strike></p>
+            <p class="preco">R$ 716,00</p><br> 
+        </div> 
+        <div class="box_produto" id="lavaroupas" style="display: block;">
+            <img onmousemove="zoomImg(this)" onmouseout="normalImg(this)" src="./imagens/produtos/lavadora_samsung1.jpg" width="120px">
+            <br> 
+            <p class="descricao">Lavadora e Secadora Samsung 11Kg</p>
+            <hr>
+            <p class="preco_anterior"><strike>R$ 4.619,00</strike></p>
+            <p class="preco">R$ 3.599,00</p></br> 
+        </div> 
+        <div class="box_produto" id="lavaroupas" style="display: block;"> 
+            <img onmousemove="zoomImg(this)" onmouseout="normalImg(this)" src="./imagens/produtos/lavadora_lg2.jpg" width="120px">
+            <br>
+            <p class="descricao">Lavadora e Secadora LG 11Kg</p>
+            <hr> 
+            <p class="preco_anterior"><strike>R$ 4.399,00</strike></p>
+            <p class="preco">R$ 3.719,07</p><br> 
+        </div>
+        <div class="box_produto" id="lavaloucas" style="display: block;"> 
+            <img onmousemove="zoomImg(this)" onmouseout="normalImg(this)" src="./imagens/produtos/lavalouça_brastemp1.jpg" width="120px">
+            <br>
+            <p class="descricao">Lava-louças Brastemp 14 serviços Inox</p>
+            <hr> 
+            <p class="preco_anterior"><strike>R$ 5.229,00</strike></p>
+            <p class="preco">R$ 3.599,10</p><br>
+        </div>
+        <div class="box_produto" id="lavaloucas" style="display: block;">  
+            <img onmousemove="zoomImg(this)" onmouseout="normalImg(this)" src="./imagens/produtos/lavalouça_philco2.jpg" width="120px">
+            <br> 
+            <p class="descricao">Lava-Louças de Bancada Philco 14 Serviços Inox</p>
+            <hr> 
+            <p class="preco_anterior"><strike>R$ 3.629</strike></p>
+            <p class="preco">R$ 2.699,00</p></br> 
+        </div>
+    </section>
+</div> 
+
+    <br> <br>
+
+    <footer id="rodape">
+        <p id="formas_pagamento"><b>Formas de pagamento</b></p>
+        <img src="./imagens/formas-pagamento.png"> 
+        <p>&copy; Recode Pro</p> 
+    </footer>
+
+</body>
+</html> 
